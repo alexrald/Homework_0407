@@ -28,7 +28,7 @@ public class Main {
             arrPeople[i] = new Person(strName, iAge, strColor);
         }
 
-        // List people and sum their ages
+        // List people and save ages to a separate array
         int[] arrAges = new int[iPeopleCount];
         System.out.println("We have " + iPeopleCount + " people here:");
         for (int i = 0; i < arrPeople.length; i++) {
@@ -37,6 +37,7 @@ public class Main {
                     arrPeople[i].getName(), arrPeople[i].getAge(), arrPeople[i].getHairColor());
         }
 
+        // Output average age
         System.out.println("The average age of people is " + Average.getAverage(arrAges));
     }
 }
